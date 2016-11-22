@@ -1,0 +1,9 @@
+[package]
+name = "jwtrs"
+version = "0.0.1"
+authors = [ "Tan Quach <tan.quach@gmail.com>" ]
+
+[dependencies]
+iron = "0.4"
+router = "0.4"
+bodyparser = "0.4.1"
