@@ -8,17 +8,17 @@ all:
 	$(MAKE) doc
 
 build:
-	$(CARGO) $(CARGO_OPTS) build
+	$(CARGO) $(CARGO_OPTS) build --verbose
 
 clean:
 	$(CARGO) $(CARGO_OPTS) clean
 
 check:
-	$(MAKE) build
-	$(MAKE) test
+	$(MAKE) build --verbose
+	$(MAKE) test --verbose
 
 test:
-	$(CARGO) $(CARGO_OPTS) test
+	$(CARGO) $(CARGO_OPTS) test  --verbose
 
 bench:
 	$(CARGO) $(CARGO_OPTS) bench
